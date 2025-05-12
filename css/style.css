@@ -27,7 +27,7 @@ body {
 /* CUSTOM PROPERTIES */
 :root {
     --num-column: 1;
-    --g-size: 10px;
+    --g-size: 20px;
 }
 
 /* layout */
@@ -35,6 +35,11 @@ body {
     width: 60%;
     max-width: 1080px;
     margin: 0 auto;
+}
+
+/* utilies */
+.b-white {
+    background-color: white;
 }
 
 
@@ -50,10 +55,6 @@ body {
 .col {
     width: calc((100% - (var(--g-size) * (var(--num-column) - 1))) / var(--num-column));
     text-align: center;
-
-   /* debug */
-   border: 1px solid black;
-   min-height: 100px;
 }
 
 /* posizionamento testo */
@@ -113,7 +114,8 @@ body {
 /* HEADER */
 
 .header {
-    height: 100px;
+    padding: 0 10px;
+    min-height: 100px;
     background-image: url(../img/wall.png);
 }
 
@@ -125,8 +127,29 @@ body {
 
 
 /* MAIN */
-.pt-35 {
-    padding-top: 35px;
+.py-35 {
+    padding: 35px 0;
 }
+
+.pt-5 {
+    padding: 5px 0;
+}
+
+.card {
+    position: relative;
+    padding: 12px;
+}
+
+.card .pin {
+    position: absolute;
+    top: 4px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 27px;
+}
+
+
+
+
 
 
