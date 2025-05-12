@@ -1,0 +1,14 @@
+/* tablet */
+@media screen and (min-width: 480px) {
+
+    :root {
+        --num-column: 2;
+    }
+}
+/* desktop */
+@media screen and (min-width: 920px) {
+
+    :root {
+        --num-column: 3;
+    }
+}
