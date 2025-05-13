@@ -13,7 +13,7 @@ function listCardsTemplate(card) {
                     <img src="${url}" alt="">  
                     <figcaption class="date">${date}</figcaption>
                     </figure>       
-                    <h2 class="pt-5">${title}</h2>
+                    <h2 class="py-5">${title}</h2>
                 </div>
             </div>`  
 }

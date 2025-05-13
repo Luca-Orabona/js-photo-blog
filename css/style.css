@@ -33,13 +33,26 @@ body {
     background-color: white;
 }
 
+.p-5 {
+    padding: 5px;
+}
+
 .py-35 {
     padding: 35px 0;
 }
 
-.pt-5 {
+.py-5 {
     padding: 5px 0;
 }
+
+.mt-15 {
+    margin-top: 15px ;
+}
+
+.mt-30 {
+    margin-bottom: 30px ;
+}
+
 
 
 
@@ -72,6 +85,11 @@ body {
 /* flexbox */
 .d-flex {
     display: flex;
+}
+
+.d-flex-column {
+    display: flex;
+    flex-direction: column;
 }
 
 /* justify */
@@ -113,6 +131,10 @@ body {
 /* HEADER */
 
 .header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9999;
     padding: 0 10px;
     min-height: 100px;
     background-image: url(../img/wall.png);
@@ -133,6 +155,20 @@ body {
     box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
 }
 
+.card:hover {
+    position: relative;
+    transform: rotate(20deg);
+    z-index: 1;
+    cursor: pointer;
+    box-shadow: 11px 5px 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover .pin{
+  display: none;
+}
+
+
+
 .card .pin {
     position: absolute;
     top: 4px;
@@ -144,6 +180,31 @@ body {
 .card figure .date {
      font-family: "Sometype Mono", monospace;
 }
+
+
+/* OVERLAY */
+.overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.71);
+    width: 100vw;
+    height: 100vh;
+    z-index: 999999;
+}
+
+.overlay img {
+    width: min(80vh, 90vmin);
+    height: min(80vh, 90vmin);
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    border-radius: 8px;
+}
+
+.overlay.d-none {
+    display: none;
+}
+
+
+
 
 
 
