@@ -8,9 +8,9 @@ function listCardsTemplate(card) {
 
     return `<div class="col">
                 <div class="card b-white">
-                    <img class="pin" src="./img/pin.svg" alt="">
+                    <img class="pin" src="./img/pin.svg" alt="Puntina rossa">
                     <figure>
-                    <img src="${url}" alt="">  
+                    <img src="${url}" alt="${title}">  
                     <figcaption class="date">${date}</figcaption>
                     </figure>       
                     <h2 class="py-5">${title}</h2>
@@ -19,7 +19,7 @@ function listCardsTemplate(card) {
 }
 
 // funzione per ricevere le IMMAGINI della CARD nelle IMMAGINI dell'OVERLAY
-function fimgOverLay(singleCard) {
+function addImgOverLay(singleCard) {
     singleCard.addEventListener("click", function () {
         overLay.classList.remove("d-none");
         const cardImgElem = singleCard.querySelector("figure img");
@@ -52,7 +52,7 @@ axios.get(apiUrl).then((resp) => {
     const cardElem = document.querySelectorAll(".card");
 
     cardElem.forEach((curCard) => {
-        fimgOverLay(curCard)
+        addImgOverLay(curCard)
     })
 
 

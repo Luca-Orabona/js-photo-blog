@@ -37,8 +37,8 @@ body {
     padding: 7px 12px;
 }
 
-.py-35 {
-    padding: 35px 0;
+.py-45 {
+    padding: 45px 0;
 }
 
 .py-5 {
@@ -49,7 +49,7 @@ body {
     margin-top: 15px ;
 }
 
-.mt-30 {
+.mb-30 {
     margin-bottom: 30px ;
 }
 
@@ -157,7 +157,7 @@ body {
 
 .card:hover {
     position: relative;
-    transform: rotate(20deg);
+    transform: rotate(10deg);
     z-index: 1;
     cursor: pointer;
     box-shadow: 11px 5px 4px 2px rgba(0, 0, 0, 0.5);
@@ -192,8 +192,9 @@ body {
 }
 
 .overlay img {
-    height: min(80vh, 90vmin);
+    height: min(80vh, 85vw);
     object-fit: cover;
+    aspect-ratio: 1 / 1;
     border-radius: 8px; 
     
 }
